@@ -1,0 +1,17 @@
+Lets get started.
+
+As I understand, 
+IL_2 applies volatile to object varaible
+IL_9 initializes bool varaible
+IL_d call to Monitor.Enter with bool varaible passed by reference
+In finally block called Monitor.Exit if bool varaible is set to true (lock was made) and lock released.
+
+Commands description:
+ldsfld			Push the value of field on the stack.
+stloc.<n>		Pop a value from stack into local variable <n>.
+ldc.i4.<n>		Push <n> onto the stack as int32.
+ldloc.<n>		Load local variable <n> onto stack
+ldloca.s <s>	Load address of local variable <s>.
+leave.s <t>		Exit a protected region of code, short form.
+brfalse.s <t>	Branch to <t> if value is zero (false), short form.
+ldstr <s>		Push a string object for the literal string.

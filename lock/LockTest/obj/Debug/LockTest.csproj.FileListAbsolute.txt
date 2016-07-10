@@ -1,0 +1,6 @@
+c:\users\dm\documents\visual studio 2015\Projects\LockTest\LockTest\bin\Debug\LockTest.exe.config
+c:\users\dm\documents\visual studio 2015\Projects\LockTest\LockTest\bin\Debug\LockTest.exe
+c:\users\dm\documents\visual studio 2015\Projects\LockTest\LockTest\bin\Debug\LockTest.pdb
+c:\users\dm\documents\visual studio 2015\Projects\LockTest\LockTest\obj\Debug\LockTest.csprojResolveAssemblyReference.cache
+c:\users\dm\documents\visual studio 2015\Projects\LockTest\LockTest\obj\Debug\LockTest.exe
+c:\users\dm\documents\visual studio 2015\Projects\LockTest\LockTest\obj\Debug\LockTest.pdb

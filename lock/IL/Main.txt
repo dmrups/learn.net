@@ -1,0 +1,37 @@
+.method private hidebysig static void  Main(string[] args) cil managed
+{
+  .entrypoint
+  // Code size       57 (0x39)
+  .maxstack  2
+  .locals init ([0] object V_0,
+           [1] bool V_1)
+  IL_0000:  volatile.
+  IL_0002:  ldsfld     object modreq([mscorlib]System.Runtime.CompilerServices.IsVolatile) LockTest.Program::lockObject
+  IL_0007:  stloc.0
+  IL_0008:  ldc.i4.0
+  IL_0009:  stloc.1
+  .try
+  {
+    IL_000a:  ldloc.0
+    IL_000b:  ldloca.s   V_1
+    IL_000d:  call       void [mscorlib]System.Threading.Monitor::Enter(object,
+                                                                        bool&)
+    IL_0012:  ldstr      "locked"
+    IL_0017:  call       void [mscorlib]System.Console::WriteLine(string)
+    IL_001c:  leave.s    IL_0028
+  }  // end .try
+  finally
+  {
+    IL_001e:  ldloc.1
+    IL_001f:  brfalse.s  IL_0027
+    IL_0021:  ldloc.0
+    IL_0022:  call       void [mscorlib]System.Threading.Monitor::Exit(object)
+    IL_0027:  endfinally
+  }  // end handler
+  IL_0028:  ldstr      "unlocked"
+  IL_002d:  call       void [mscorlib]System.Console::WriteLine(string)
+  IL_0032:  call       string [mscorlib]System.Console::ReadLine()
+  IL_0037:  pop
+  IL_0038:  ret
+} // end of method Program::Main
+
